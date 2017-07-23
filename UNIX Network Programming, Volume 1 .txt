@@ -1,0 +1,50 @@
+UNIX Network Programming, Volume 1 
+[an excerpt from the preface...]
+
+ This book is for people who want to write programs that communicate with each other using an application program interface (API) known as sockets. Some readers may be very familiar with sockets already, as that model has become synonymous with network programming. Others may need an introduction to sockets from the ground up. The goal of this book is to offer guidance on network programming for beginners as well as professionals, for those developing new network-aware applications as well as those maintaining existing code, and for people who simply want to understand how the networking components of their system function. 
+
+All the examples in this text are actual, runnable code tested on Unix systems. However, many non-Unix systems support the sockets API and the examples are largely operating system-independent, as are the general concepts we present. Virtually every operating system (OS) provides numerous network-aware applications such as Web browsers, email clients, and file-sharing servers. We discuss the usual partitioning of these applications into client and server and write our own small examples of these many times throughout the text. 
+
+
+The Third Edition 
+[an excerpt from the preface...]
+
+ Sockets have been around, more or less in their current form, since the 1980s, and it is a tribute to their initial design that they have continued to be the network API of choice. Therefore, it may come as a surprise to learn that quite a bit has changed since the second edition of this book was published in 1998. The changes we've made to the text are summarized as follows: 
+? This new edition contains updated information on IPv6, which was only in draft form at the time of publication of the second edition and has evolved somewhat. 
+
+
+? The descriptions of functions and the examples have all been updated to reflect the most recent POSIX specification (POSIX 1003.1-2001), also known as the Single Unix Specification Version 3. 
+
+
+? The coverage of the X/Open Transport Interface (XTI) has been dropped. That API has fallen out of common use and even the most recent POSIX specification does not bother to cover it. 
+
+
+? The coverage of TCP for transactions (T/TCP) has been dropped. 
+
+
+? Three chapters have been added to describe a relatively new transport protocol, SCTP. This reliable, message-oriented protocol provides multiple streams between endpoints and transport-level support for multihoming. It was originally designed for transport of telephony signaling across the Internet, but provides some features that many applications could take advantage of. 
+
+
+? A chapter has been added on key management sockets, which may be used with Internet Protocol Security (IPsec) and other network security services. 
+
+
+? The machines used, as well as the versions of their variants of Unix, have all been updated, and the examples have been updated to reflect how these machines behave. In many cases, examples were updated because OS vendors fixed bugs or added features, but as one might expect, we've discovered the occasional new bug here and there. The machines used for testing the examples in this book were: 
+
+?Apple Power PC running MacOS/X 10.2.6 
+?HP PA-RISC running HP-UX 11i 
+?IBM Power PC running AIX 5.1 
+?Intel x86 running FreeBSD 4.8 
+?Intel x86 running Linux 2.4.7 
+?Sun SPARC running FreeBSD 5.1 
+?Sun SPARC running Solaris 9 
+
+
+
+The Authors 
+The first and second editions of this book were written solely by W. Richard Stevens, who passed away on September 1, 1999. Information about the earlier editions, as well as his many other books and papers, may be found at www.kohala.com. 
+
+Bill Fenner is Principal Technical Staff Member at AT&T Labs in Menlo Park, CA, specializing in IP multicasting, network management, and measurement. He is one of the IETF's Routing Area Directors, responsible for approving all routing-related documents that get published as RFCs. 
+
+Andy Rudoff is a Senior Software Engineer at Sun Microsystems, where he has worked for approximately a decade. Andy's experience includes Networking, Operating Systems internals, File Systems, and High Availability software architecture. 
+
+Bill Fenner and Andy Rudoff welcome your questions, corrections, and feedback on the UNIX Network Programming book. See our contact page for our email address. 

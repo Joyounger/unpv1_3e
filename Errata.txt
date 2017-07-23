@@ -1,0 +1,22 @@
+
+
+ This file contains all typos found in the book UNIX Network Programming, Volume 1, Third Edition ?Last updated February 26, 2004 
+?Note: The smallest number in the list of numbers above the ISBN towards the bottom of the copyright page specifies the printing. For example "10 9 8 7 6 5 4 3 2 1" specifies the first printing. 
+
+--------------------------------------------------------------------------------
+?The following errors have not been corrected in any printing. 
+
+
+Page
+
+Description
+
+6 The first full paragraph should begin 'Most discussions of Unix these days include the term "POSIX"' 
+55 The second sentence of the last paragraph should begin "This permits a maximum-sized IPv4 header (20 bytes of fixed header, 40 bytes of options)..."  
+723 The 6th argument to inet6_opt_append is uint8_t, i.e., 
+int inet6_opt_append(void *extbuf, socklen_t extlen, 
+                     int offset, uint8_t type, socklen_t len, 
+                     uint8_t align, void **databufp);  
+948 The bibliography entry for CERT, 1996a should read "UDP Port Denial-of-Service Attack" 
+950 The bibliography entry for Josey, 1997 should read "Upper Saddle River, NJ" 
+Thanks to Greg Olin, Zvezdan Petkovic, JINMEI Tatuya, Rich Teer, and Rui Zhao for pointing out these errors. 
